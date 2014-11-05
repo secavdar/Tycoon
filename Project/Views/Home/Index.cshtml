@@ -1,0 +1,16 @@
+﻿@using (Html.BeginForm("Login", "Home"))
+{ 
+    <table>
+        <tr>
+            <td>Kullanıcı Adı : </td>
+            <td>@Html.TextBox("UserName")</td>
+        </tr>
+        <tr>
+            <td>Şifre : </td>
+            <td>@Html.TextBox("Password")</td>
+        </tr>
+        <tr>
+            <td colspan="2"><button type="submit">Giriş</button></td>
+        </tr>
+    </table>
+}
